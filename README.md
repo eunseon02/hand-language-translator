@@ -1,7 +1,9 @@
 # hand-language-translator
 미디어파이프(mediapipe)를 이용한 수화 해석 알고리즘
 
+
 ## 1) dataset 수집
+
 
 데이터의 수집은 다음과 같이 이루어진다.
 	- 손 landmark의 3차원 좌표: 21개 x3
@@ -14,6 +16,7 @@
 
 ## 2) MediaPipe를 이용하여 손가락의 움직임 인식
 
+
 ![hand_landmarks](https://user-images.githubusercontent.com/108911413/203527185-404056b5-4bad-4139-ab6a-bc1f4aa8d316.png)
 
 - 0번 landmark의 좌표를 (0, 0, 0)으로 맞춘다.
@@ -21,3 +24,4 @@
 
 벡터 변환은 3D 벡터 회전 변환 행렬을 이용한다. 변환하고자 하는 정점에 아래의 행렬을 단순하게 곱하면 연산이 완료된다. 이 과정을 통해 인식되는 손의 크기나 회전에 대하여 데이터가 추가 연산 되며 변환된 3차원 좌표의 값은 넘파이 배열의 형태로 저장한다.
 
+![벡터변환](https://user-images.githubusercontent.com/108911413/203529089-07774ef4-5cdb-4937-96ed-7e2ab203d18a.png)
