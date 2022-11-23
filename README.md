@@ -37,6 +37,13 @@ k의 값을 정할 때는 교차검증을 이용하여 1~(n은 총 데이터의 
 K-최근접 이웃 알고리즘의 성능 평가를 하기 위해서는 IOU를 사용할 예정이다.
 
 
+
+결과는 다음과 같다.
+
+![바람](https://user-images.githubusercontent.com/108911413/203529863-53663470-a4a5-4da0-b341-d2afdda39b40.png)
+![안녕](https://user-images.githubusercontent.com/108911413/203529876-fa92bbfb-e08b-4cee-ae3e-f514c346eb2b.png)
+
+
 ## 4) 프레임을 통해 수화 동작을 해석
 
 
